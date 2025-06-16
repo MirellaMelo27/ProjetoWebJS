@@ -1,0 +1,105 @@
+body{
+    background-color: #000C36;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+}
+
+nav{
+    background-color: #01176765;
+    width: auto;
+    height: 150px;
+    border-radius: 0px 0px 20px 20px;
+    top: 0;
+    position: sticky;
+
+}
+
+.logo{
+    display: flex;
+    justify-self: start;
+    margin-left: 30px;
+    padding-top: 10px;  
+    padding-right: 0%;  
+    text-align: center;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+}
+
+nav .home{
+    display: flex;
+    justify-self: center;
+    margin-top: -80px;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.box{
+    background-color: #011767;
+    margin: 150px 150px 0px 150px;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 30px;
+    height: 1793px;;
+}
+
+.jogos{
+    background-color: #2F325B;
+    margin: 120px;
+    margin-bottom: -80px;
+    display: flex;
+    max-height: 127px;
+    box-shadow: 10px 10px 4px 0px #00000069; 
+    font-size: small;
+}
+
+.main{
+    display: inline;
+    margin-left: 20px;
+    margin-right: 50px;
+    font-weight: 100;
+}
+
+.infos{
+    margin-top: 15px;
+    margin-right: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
+img{
+    width: 222px;
+    height: 126px;
+    
+}
+
+h2{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: -60px;
+    font-family: "Geist Mono", monospace;
+    font-weight: normal;
+    font-weight: 200;
+
+}
+
+h3, h4{
+    font-weight: 200;
+}
+
+button{
+    border-radius: 8px;
+    background-color: #739166;
+    width: 93px;
+    height: 29px;
+    color: white;
+    margin-top: 10px;
+    border: none;
+}
