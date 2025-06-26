@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="h1">Hello World</h1> <!-- Título principal com ID (adicionado o id que faltava no JS). -->
+    <h2 id="here"></h2> <!-- Elemento que será manipulado pelo JS. -->
+    <h3 class="h3">Teste 1</h3> <!-- Elemento com classe. -->
+    <div id="bloco"></div> <!-- Div para manipular conteúdo via JS. -->
+    <img id="lenin" src="https://via.placeholder.com/150" alt="Imagem do Lenin"> <!-- Imagem com ID. -->
+
+    <button id="butao"></button>
+    
+
+    <script>
+
+        console.log("Hello World")
+
+        const h2 = document.querySelector("#h1"); // Corrigido ID usado (antes era "h2" 
+        console.log(h1);
+
+        const h1 = document.querySelectorAll(".h3");// Seleciona pelo ID
+        console.log(h3);
+
+        const h3 = document.querySelector(".h3"); // Corrigido "documento" para "document"
+        console.log(h3);
+
+        // Manipulando o conteúdo do elemento
+        h2.textContent = "Trocar Texto"; // Troca o texto visível do h2
+
+        // Manipulando HTML dentro da div
+        const div = document.getElementById("bloco");
+        div.innerHTML = "<h1>Título do bloco</h1>"; // Insere HTML dentro da div
+
+        // Manipulação de atributos e estilo da imagem
+        const img = document.getElementById("lenin");
+
+        console.log(img.getAttribute("src")); // Mostra o caminho da imagem atual
+        img.setAttribute("src", "https://via.placeholder.com/300"); // Altera a imagem (link corrigido para funcionar)
+
+        // Estiliza a imagem com borda e bordas arredondadas
+        img.style.border = "1px solid black";
+        img.style.borderRadius = "10px";
+
+
+        //eventos
+
+        const button = document.getElementById("botao");
+        button.addEventListener("click", function(){
+            console.log("Entrou!")
+            img.setAttribute("src", "https")
+        })
+
+    </script>
+</body>
+</html>
