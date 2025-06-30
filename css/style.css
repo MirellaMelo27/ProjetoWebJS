@@ -94,7 +94,7 @@ h3, h4{
     font-weight: 200;
 }
 
-button{
+.cart{
     border-radius: 8px;
     background-color: #739166;
     width: 93px;
@@ -102,4 +102,45 @@ button{
     color: white;
     margin-top: 10px;
     border: none;
+}
+
+.carrinho{
+    border-radius: 100px;
+    background-color: #011767;
+    border: none;
+    width: 70px;
+    height: 55px;
+    font-size: 35px   
+}
+
+
+.pesquisa {
+    background-color: #162c6e; /* Cor da barra */
+    border-radius: 20px;
+    display: flex;
+    align-items: end;
+    padding: 8px 16px;
+    width: 300px;
+  }
+
+  .pesquisa input {
+    background: transparent;
+    border: none;
+    color: #b0b9d1;
+    font-size: 18px;
+  }
+
+  .pesquisa .icon {
+    width: 24px;
+    height: 24px;
+    stroke: #ffffff;
+    stroke-width: 2;
+  }
+
+  .pesquisa svg {
+    flex-shrink: 0;
+  }
+
+nav .pesquisa{
+    display: inline;
 }
