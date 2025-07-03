@@ -14,8 +14,10 @@ nav{
     height: 150px;
     border-radius: 0px 0px 20px 20px;
     top: 0;
-    position: sticky;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 30px; 
 }
 
 .logo{
@@ -29,19 +31,14 @@ nav{
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 24px;
-    font-weight: 100;
 }
 
-nav .home{
-    display: flex;
-    justify-self: center;
-    margin-top: -80px;
-    font-family: "Geist Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 24px;
-}
+.home {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
 
 .box{
     background-color: #011767;
@@ -94,4 +91,56 @@ p{
 
 h3{
     font-weight: 200;
+}
+
+.cart{
+    border-radius: 8px;
+    background-color: #739166;
+    width: 93px;
+    height: 29px;
+    color: white;
+    margin-top: 10px;
+    border: none;
+}
+
+.carrinho{
+    border-radius: 100px;
+    background-color: #011767;
+    border: none;
+    width: 70px;
+    height: 55px;
+    font-size: 35px   
+}
+
+
+.pesquisa {
+    background-color: #162c6e;
+    border-radius: 20px;
+    padding: 8px 16px;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pesquisa input {
+    background: transparent;
+    border: none;
+    color: #b0b9d1;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.pesquisa .icon {
+    width: 24px;
+    height: 24px;
+    stroke: #ffffff;
+    stroke-width: 2;
+}
+
+.direita {
+    display: flex;
+    align-items: center;
+    left: 500000;
 }
