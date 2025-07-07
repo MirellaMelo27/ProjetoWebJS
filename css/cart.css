@@ -18,8 +18,8 @@ nav{
 
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribui entre esquerda e direita */
-    padding: 0 30px; /* Espaçamento lateral */
+    justify-content: space-between;
+    padding: 0 30px; 
 
 
 }
@@ -35,6 +35,10 @@ nav{
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 24px;
+}
+
+h3{
+    font-weight: 200;
 }
 
 .home{
@@ -60,6 +64,20 @@ nav{
     
 }
 
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px 0px 300px;
+    color: white;
+}
+
+
+a{
+    color: #ffffff;
+    text-decoration:none ;
+}
+
 .jogos{
     background-color: #000C36;
     margin: 120px;
@@ -77,11 +95,6 @@ nav{
     margin-top: 20px;
 }
 
-.infos{
-    display: flex;
-    justify-content:end;
-    margin-top: 15px;
-}
 img{
     margin: 10px 10px 0px 10px;
     width: 222px;
@@ -155,9 +168,10 @@ button{
     border: none;
     width: 70px;
     height: 55px;
-    font-size: 35px   
-}
+    font-size: 35px;
+    margin-bottom: 10px;
 
+}
 
 .pesquisa {
     background-color: #162c6e; 
@@ -183,7 +197,11 @@ button{
     stroke-width: 2;
     padding: 3px 0px 0px 30px;
     flex-shrink: 0;
+}
 
+
+nav .pesquisa{
+    display: inline;
 }
 
  .direita{

@@ -97,6 +97,10 @@ h3{
 
 }
 
+a{
+    color: #ffffff;
+    text-decoration:none ;
+}
 
 .pesquisa {
     background-color: #162c6e; 

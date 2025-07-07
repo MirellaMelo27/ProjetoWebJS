@@ -10,16 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:opsz,wght@14..32,160&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+
     <nav>
         <div  class="logo">
             <h3>GAMER<br >STORE</h3>
         </div>
-        <a class="home">HOME</a>
+        <a href="store.html" class="home">HOME</a>
         <a href="cart.html"></a>
         <div class="direita">
             <div class="pesquisa">
-                <input type="text" placeholder="Search">
+                <input type="text" id="searchInput" placeholder="Search">
                 <svg class="icon" viewBox="0 0 24 24" fill="none">
                     <circle cx="11" cy="11" r="8" />
                     <line x1="17" y1="17" x2="22" y2="22" />
@@ -59,7 +62,7 @@
         <div class="jogos" id="the last">
         <img src="images/jogo.jpg">
         <div class="main">
-            <h3>The Last of Us™ Part I</h3>
+            <h3>Minecraft</h3>
             <p>Discover the award-winning game that inspired the critically acclaimed television show. Guide Joel and Ellie through a post-apocalyptic America, and encounter unforgettable allies and enemies in The Last of Us™.</p>
         </div>
         <div class="infos">
@@ -99,7 +102,73 @@
             <h4>R$ 249,90</h4>
         <button class="cart">+Cart</button>
         </div>
-        </div>      
+        </div>   
+                <div class="jogos" id="the last">
+        <img src="images/jogo.jpg">
+        <div class="main">
+            <h3>The Last of Us™ Part I</h3>
+            <p>Discover the award-winning game that inspired the critically acclaimed television show. Guide Joel and Ellie through a post-apocalyptic America, and encounter unforgettable allies and enemies in The Last of Us™.</p>
+        </div>
+        <div class="infos">
+            <h4>R$ 249,90</h4>
+        <button class="cart">+Cart</button>
+        </div>
+        </div> 
+        <div class="jogos" id="the last">
+        <img src="images/jogo.jpg">
+        <div class="main">
+            <h3>The Last of Us™ Part I</h3>
+            <p>Discover the award-winning game that inspired the critically acclaimed television show. Guide Joel and Ellie through a post-apocalyptic America, and encounter unforgettable allies and enemies in The Last of Us™.</p>
+        </div>
+        <div class="infos">
+            <h4>R$ 249,90</h4>
+        <button class="cart">+Cart</button>
+        </div>
+        </div> 
+        
+        <div class="jogos" id="the last">
+            <img src="images/jogo.jpg">
+            <div class="main">
+                <h3>The Last of Us™ Part I</h3>
+                <p>Discover the award-winning game that inspired the critically acclaimed television show. Guide Joel and Ellie through a post-apocalyptic America, and encounter unforgettable allies and enemies in The Last of Us™.</p>
+            </div>
+            <div class="infos">
+                <h4>R$ 249,90</h4>
+            <button class="cart">+Cart</button>
+            </div>
+            </div> 
+
+            <div class="jogos" id="the last">
+        <img src="images/jogo.jpg">
+        <div class="main">
+            <h3>The Last of Us™ Part I</h3>
+            <p>Discover the award-winning game that inspired the critically acclaimed television show. Guide Joel and Ellie through a post-apocalyptic America, and encounter unforgettable allies and enemies in The Last of Us™.</p>
+        </div>
+        <div class="infos">
+            <h4>R$ 249,90</h4>
+        <button class="cart">+Cart</button>
+        </div>
+        </div> 
     </div>
+
+
+    <script>
+        const input = document.getElementById("searchInput");
+        const jogos = document.getElementsByClassName("jogos");
+    
+        input.addEventListener("keyup", function () {
+            const filtro = input.value.toLowerCase();
+    
+            for (let i = 0; i < jogos.length; i++) {
+                const titulo = jogos[i].getElementsByTagName("h3")[0].textContent.toLowerCase();
+    
+                if (titulo.indexOf(filtro) > -1) {
+                    jogos[i].style.display = "";
+                } else {
+                    jogos[i].style.display = "none";
+                }
+            }
+        });
+    </script>
 </body>
 </html>
