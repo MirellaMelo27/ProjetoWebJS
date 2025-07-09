@@ -55,26 +55,32 @@ img{
 }
 
 h2{
-    margin-top: 10px;
+    margin: 10px 0px 0px -10px;
     text-align: start;
-        margin-bottom: -60px;
     font-family: "Geist Mono", monospace;
     font-weight: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 25px;
 }
 
 
-.cart{
+.infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cart {
     border-radius: 8px;
     background-color: #739166;
     width: 93px;
     height: 29px;
     color: white;
-    margin-top: 25px;
-    margin-left: 1150px;
     border: none;
-}
+    font-family: "Geist Mono", monospace;
+    font-size: 16px;
+  }
 
 p{
     margin-top: 50px;
