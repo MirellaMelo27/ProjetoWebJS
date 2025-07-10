@@ -8,6 +8,8 @@ body{
     margin: 0;
 }
 
+
+
 nav {
     background-color: #01176765;
     height: 150px;
@@ -49,9 +51,14 @@ nav {
 img{
     width: 500px;
     height: 280px;
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 20px;
-    margin-left: 380px;
+}
+
+.imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2{

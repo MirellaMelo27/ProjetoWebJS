@@ -15,7 +15,6 @@ nav{
     border-radius: 0px 0px 20px 20px;
     top: 0;
     position: sticky;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,23 +50,38 @@ h3{
     
 }
 
+.lista{
+    flex-grow: 1;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+}
+
+
 .box{
     background-color: #011767c4;
-    margin: 0px 90px 20px 90px;
-    padding: 10px;
+    margin: 30px 90px;
+    padding: 20px;
     border-radius: 20px;
     margin-top: 30px;
     height: auto;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
     
 }
 
 
-.infos{
+.infos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:30px 10px 0px 330px;
-    color: white;   
+    justify-content: center;
+    margin-left: auto;
+    gap: 10px;
+    margin-right: 80px;
 }
 
 
@@ -85,7 +99,11 @@ a{
     width: auto;
     font-size: small;
     border-radius: 10px;
+    padding: 10px;
+    
+
 }
+
 
 .jogos h3{
     font-weight: 200;
@@ -111,7 +129,6 @@ h2{
 }
 
 
-
 button{
     border-radius: 8px;
     background-color: #739166;
@@ -122,27 +139,32 @@ button{
     border: none;
 }
 
-.subtotal{
-    margin: 10px;
+
+.compra, .subtotal{
     background-color: #263363;
+    border-radius: 10px;
     height: 34px;
     border-radius: 10px;
-    margin: 100px 0px 0px 0px;
-    padding: 0px 170px 0px 170px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto 90px 0px 90px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .compra{
-    margin: 10px;
-    background-color: #263363;
-    border-radius: 10px;
-    padding: 0px 170px 0px 170px;
-    margin: 10px 0px 0px 0px;
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
 }
 
 .compra button{
@@ -211,5 +233,5 @@ nav .pesquisa{
 .add{
     display: flex;
     justify-content: flex-end;
-    margin: 120px 120px -80px 0px;
+    margin: 10px 120px 0px 0px;
 }
