@@ -29,22 +29,19 @@
       <div class="box">
         <div class="infos">
           <h2 id="titulo">Carregando...</h2>
-          <h4 id="preco"></h4>
           <button class="cart">+Cart</button>
         </div>
         <div class="imagem">
-          <img id="imagem" src="" alt="Imagem do jogo">
+          <img id="imagem" src="">
         </div>
         <p id="descricao">Carregando descrição...</p>
       </div>
     
     
       <script>
-        // Pegando o parâmetro "jogo" da URL
         const params = new URLSearchParams(window.location.search);
         const jogoId = params.get("jogo");
       
-        // Dados dos jogos diretamente no JS (sem arquivo externo)
         const jogos = {
           thelastofus: {
             title: "The Last of Us™ Part I",
@@ -63,7 +60,6 @@
           }
         };
       
-        // Exibindo os dados na tela
         const jogo = jogos[jogoId];
         if (jogo) {
           document.getElementById("titulo").textContent = jogo.title;
