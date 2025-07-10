@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:opsz,wght@14..32,160&display=swap" rel="stylesheet">
+
+    <title>Game</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <h3>GAMER<br>STORE</h3>
+        </div>
+      
+        <a href="store.html" class="home">HOME</a>
+      
+        <div class="direita">
+
+          <button type="button" onclick="window.location.href='cart.html'" class="carrinho">🛒</button>
+        </div>
+      </nav>
+
+
+      <div class="box">
+        <div class="infos">
+          <h2 id="titulo">Carregando...</h2>
+          <h4 id="preco"></h4>
+          <button class="cart">+Cart</button>
+        </div>
+        <div class="imagem">
+          <img id="imagem" src="" alt="Imagem do jogo">
+        </div>
+        <p id="descricao">Carregando descrição...</p>
+      </div>
+    
+    
+      <script>
+        // Pegando o parâmetro "jogo" da URL
+        const params = new URLSearchParams(window.location.search);
+        const jogoId = params.get("jogo");
+      
+        // Dados dos jogos diretamente no JS (sem arquivo externo)
+        const jogos = {
+          thelastofus: {
+            title: "The Last of Us™ Part I",
+            image: "images/elliejoe.gif",
+            description: "Experience the emotional storytelling and unforgettable characters in The Last of Us™, winner of over 200 Game of the Year awards. In a ravaged civilization, where infected and hardened survivors run rampant, Joel, a weary protagonist, is hired to smuggle 14-year-old Ellie out of a military quarantine zone. However, what starts as a small job soon transforms into a brutal cross-country journey."
+          },
+          minecraft: {
+            title: "Minecraft",
+            image: "images/mine.gif",
+            description: "Build anything you can imagine, uncover spooky mysteries, and survive the night in the best free-to-play game. In Minecraft, every playthrough is different and unforgettable adventures await around every corner. Explore and craft your way through an infinite world that you can build one block at a time."
+          },
+          baldursgate: {
+            title: "Baldur's Gate 3",
+            image: "images/baldurr.gif",
+            description: "Gather your party and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power. Mysterious abilities are awakening inside you, drawn from a mind flayer parasite planted in your brain. Resist, and turn darkness against itself. Or embrace corruption, and become ultimate evil."
+          }
+        };
+      
+        // Exibindo os dados na tela
+        const jogo = jogos[jogoId];
+        if (jogo) {
+          document.getElementById("titulo").textContent = jogo.title;
+          document.getElementById("descricao").textContent = jogo.description;
+          document.getElementById("imagem").src = jogo.image;
+        } else {
+          document.getElementById("titulo").textContent = "Jogo não encontrado";
+          document.getElementById("descricao").textContent = "Este jogo não foi cadastrado.";
+        }
+      </script>
+      
+  </body>
+</html>
